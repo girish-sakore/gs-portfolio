@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import "tailwindcss";
+
+@layer theme {
+  :root {
+    --color-gray-100: oklch(98% 0.01 240); /* Light gray */
+    --color-gray-200: oklch(95% 0.02 240);
+    --color-gray-300: oklch(90% 0.03 240);
+    --color-gray-600: oklch(50% 0.02 240);
+    --color-gray-700: oklch(40% 0.02 240);
+    --color-gray-800: oklch(30% 0.02 240);
+    --color-teal-500: oklch(65% 0.15 200); /* Teal */
+    --color-teal-600: oklch(55% 0.15 200);
+    --color-teal-700: oklch(45% 0.15 200);
+  }
+}
+
+@layer theme {
+  :root {
+    --spacing: 0.25rem;
+  }
+}
+@layer utilities {
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .w-17 {
+    width: calc(var(--spacing) * 17);
+  }
+  .pr-29 {
+    padding-right: calc(var(--spacing) * 29);
+  }
+}
+
+
+
+#root {
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Glass effect styling */
+.glass-effect {
+  @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+/* Optional: Add a subtle gradient background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+.shine-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.7s;
+}
+
+.shine-button:hover::before {
+  left: 100%;
+}
+
+
+
+
+
+.corner-cutout {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 75px; /* Adjust as needed */
+  height: 75px; /* Adjust as needed */
+  background: linear-gradient(135deg, transparent 50%, var(--color-teal-600) 50%);
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.corner-cutout .icon {
+  /* transform: rotate(-45deg); Adjust icon rotation */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-right: 2rem;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.social-icons.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contact-form {
+  display: none;
+  animation: ease-in-out 0.7s;
+}
+
+.contact-form-active {
+  display: block;
+  animation: ease-in 0.7s;
+}
