@@ -64,7 +64,7 @@ const Contact = () => {
   return (
     <>
       <h2 className="text-3xl font-semibold mb-6 text-gray-800">Get in touch📬</h2>
-      <div className="flex justify-center" style={{'overflowY':'clip'}}>
+      <div className="max-w-3xl p-6 mx-auto flex justify-center" style={{'overflowY':'clip'}}>
         <motion.div
           className="relative w-[350px] h-[450px] bg-white/25 shadow-lg rounded-lg"
           style={{ perspective: 1000 }}

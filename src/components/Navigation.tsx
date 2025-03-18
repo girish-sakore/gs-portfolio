@@ -28,8 +28,6 @@ export default function Navigation() {
           {links.map((link, index) => {
             const isHovered = hoveredIndex === index;
             const isActive = location.pathname === link.href;
-            console.log('location.pathname > ', location.pathname);
-            console.log('link.href > ', link.href);
 
             const iconAnimation = useSpring({
               transform: isHovered ? "scale(1.2)" : "scale(1)",
