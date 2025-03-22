@@ -9,9 +9,13 @@ const Home = () => {
       {/* Hero Section */}
       <div className="max-w-3xl text-left">
         <div className="flex items-end mb-2">
-          <img src={logo} alt="Your Logo" className="h-20 w-auto mr-4 opacity-90" /> 
+          <img src={logo} alt="proxima cloud logo" className="h-20 w-auto mr-4 opacity-90" />
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
-            Proxima Cloud
+            Proxima
+          </h1>
+          &nbsp;
+          <h1 className="text-4xl md:text-5xl font-medium text-gray-800">
+            Cloud
           </h1>
         </div>
         <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-700">
@@ -29,14 +33,14 @@ const Home = () => {
         </a>
       </div>
 
-       {/* Skills Section with Icons */}
-       <SkillsWithIcons />
+      {/* Skills Section with Icons */}
+      <SkillsWithIcons />
 
-        {/* Technologies Section */}
-        {/* <TechStack /> */}
+      {/* Technologies Section */}
+      {/* <TechStack /> */}
 
-        {/* Contact Call to Action */}
-        <ContactCTA />
+      {/* Contact Call to Action */}
+      <ContactCTA />
     </div>
   );
 };
