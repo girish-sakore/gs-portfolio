@@ -4,8 +4,8 @@ import logo_sec from '../assets/Proxima_Cloud_3.png'
 export default function About() {
   return (
     <>
-      <img src={logo_sec} alt="Your Logo" className="h-20 w-auto mr-4 opacity-90" />
-      <h2 className="text-3xl font-semibold mb-6 text-gray-800">About Us</h2>
+      <img src={logo_sec} alt="proxima cloud logo" className="h-20 w-auto mr-4 opacity-90" />
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 text-gray-800">About Us</h2>
       {/* About Me (Detailed) */}
       <div className="max-w-3xl p-6 mx-auto">
 

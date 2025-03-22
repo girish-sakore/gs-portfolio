@@ -64,8 +64,8 @@ const Contact = () => {
 
   return (
     <>
-      <img src={logo_sec} alt="Your Logo" className="h-20 w-auto mr-4 opacity-90" />
-      <h2 className="text-3xl font-semibold mb-6 text-gray-800">Get in touch📬</h2>
+      <img src={logo_sec} alt="proxima cloud logo" className="h-20 w-auto mr-4 opacity-90" />
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 text-gray-800">Get in touch📬</h2>
       <div className="max-w-3xl p-6 mx-auto flex justify-center" style={{'overflowY':'clip'}}>
         <motion.div
           className="relative w-[350px] h-[450px] bg-white/25 shadow-lg rounded-lg"
