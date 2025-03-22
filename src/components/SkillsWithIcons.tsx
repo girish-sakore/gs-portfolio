@@ -60,7 +60,7 @@ const SkillsWithIcons: React.FC = () => {
   return (
     <div className="w-full bg-white/25 py-12 mt-12 rounded-lg">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl font-semibold mb-8 text-gray-800">My Skills</h2>
+        <h2 className="text-3xl font-semibold mb-8 text-gray-800">Our Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {skillCategories.map((category) => (
             <div key={category.title} className="bg-white p-6 rounded-lg shadow">

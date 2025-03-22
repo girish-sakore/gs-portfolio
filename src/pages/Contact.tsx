@@ -4,6 +4,7 @@ import { FaEnvelope, FaLinkedin, FaPhone } from "react-icons/fa";
 import { GiCandlestickPhone } from "react-icons/gi";
 import { animated, useSpring } from "@react-spring/web";
 import { IoIosSend } from "react-icons/io";
+import logo_sec from '../assets/Proxima_Cloud_3.png'
 
 const Contact = () => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -63,6 +64,7 @@ const Contact = () => {
 
   return (
     <>
+      <img src={logo_sec} alt="Your Logo" className="h-20 w-auto mr-4 opacity-90" />
       <h2 className="text-3xl font-semibold mb-6 text-gray-800">Get in touch📬</h2>
       <div className="max-w-3xl p-6 mx-auto flex justify-center" style={{'overflowY':'clip'}}>
         <motion.div
