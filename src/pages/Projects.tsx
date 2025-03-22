@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo_sec from '../assets/Proxima_Cloud_3.png'
-
+import myne_logo from '../assets/234844.png';
+import hapchi_logo from '../assets/000032.png';
 interface Project {
   id: number;
   title: string;
@@ -22,7 +23,7 @@ const projects: Project[] = [
   {
     title: 'MyneLeap2024',
     description: 'A complete wealth solution built for your financial well-being.',
-    image: '/src/assets/234844.png',
+    image: myne_logo,
     link: 'https://joinmyne.com/',
     features: [
       'International payments',
@@ -47,7 +48,7 @@ const projects: Project[] = [
     title: 'Hapchi',
     description:
       "India's first child safety digital platform focuses on every child safety concern that a child encounters during their journey from early childhood to adolescence.",
-    image: '/src/assets/000032.png',
+    image: hapchi_logo,
     link: 'https://hapchi.in/',
     features: [
       'Assesments and Questionaires',
